@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h2>Intern Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main class="dashboard">
+
+    <!-- User Info -->
+    <section class="card">
+      <h3>Welcome</h3>
+      <p>This dashboard helps you manage daily internship tasks efficiently.</p>
+    </section>
+
+    <!-- Add Task -->
+    <section class="card">
+      <h3>Add New Task</h3>
+      <input id="taskTitle" placeholder="Task title">
+      <textarea id="taskDesc" placeholder="Task description"></textarea>
+      <button onclick="addTask()">Add Task</button>
+    </section>
+
+    <!-- Task List -->
+    <section class="card">
+      <h3>Your Tasks</h3>
+      <div id="taskList"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

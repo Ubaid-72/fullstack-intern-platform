@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intern Platform – Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+  <div class="auth-container">
+    <h1>Intern Productivity Platform</h1>
+
+    <div class="auth-box">
+      <h2>Register</h2>
+      <input id="rName" placeholder="Full Name">
+      <input id="rEmail" placeholder="Email">
+      <input id="rPassword" type="password" placeholder="Password">
+      <button onclick="register()">Create Account</button>
+    </div>
+
+    <div class="auth-box">
+      <h2>Login</h2>
+      <input id="lEmail" placeholder="Email">
+      <input id="lPassword" type="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+
+    <p id="authMsg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
